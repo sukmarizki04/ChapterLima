@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Challenge Chapter 5 (ID)</string>
+    <string name="prompt_username">Masukkan Username</string>
+    <string name="prompt_email">Masukkan Email</string>
+    <string name="prompt_password">Masukkan Password</string>
+    <string name="prompt_confirm_password">Masukkan Konfirmasi Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="invalid_username" translatable="false">Username tidak valid</string>
+    <string name="invalid_password">Password harus lebih dari 5 karakter</string>
+    <string name="login_failed">"Gagal Login"</string>
+    <string name="hello_blank_fragment">Halo fragment kosong</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="save">Simpan</string>
+    <string name="dont_have_account">Belum punya akun?</string>
+    <string name="popular_movies">Film Terpopuler</string>
+    <string name="label_description">Deskripsi</string>
+    <string name="welcome_home">Selamat Datang, Username</string>
+    <string name="profile">Profil</string>
+    <string name="prompt_full_name">Masukkan Nama Lengkap</string>
+    <string name="update">Update</string>
+    <string name="logout">Log Out</string>
+    <string name="prompt_address">Masukkan Alamat</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/MatchParent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_detail_banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <ImageView
+            android:id="@+id/iv_detail_movie"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintDimensionRatio="w,2:3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_content"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/iv_detail_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_movie"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_banner"
+            tools:text="Lorem Ipsum" />
+
+        <ImageView
+            android:id="@+id/iv_detail_rate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_yellow_star"
+            app:layout_constraintEnd_toStartOf="@+id/iv_detail_release_date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_movie"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_title" />
+
+
+        <ImageView
+            android:id="@+id/iv_detail_release_date"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_release_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_rate"
+            app:layout_constraintTop_toTopOf="@+id/iv_detail_rate" />
+
+        <TextView
+            android:id="@+id/tv_detail_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/iv_detail_rate"
+            app:layout_constraintStart_toStartOf="@+id/iv_detail_rate"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_rate"
+            tools:text="Rating"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/tv_detail_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/iv_detail_release_date"
+            app:layout_constraintStart_toStartOf="@+id/iv_detail_release_date"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_release_date"
+            tools:text="Release Date"
+            android:textColor="@android:color/white"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="iv_detail_movie,tv_detail_title,iv_detail_rate,iv_detail_release_date,tv_detail_rating,tv_detail_release_date" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/label_description"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+        <TextView
+            android:id="@+id/tv_movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="2dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            android:textColor="@android:color/white"
+            tools:text="@string/lorem_ipsum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

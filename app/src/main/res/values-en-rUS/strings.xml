@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Challenge Chapter 5 (EN)</string>
+    <string name="prompt_username">Input Username</string>
+    <string name="prompt_email">Input Email</string>
+    <string name="prompt_password">Input Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password">Password must be more than 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="save">Save</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="label_description">Description</string>
+    <string name="welcome_home">Welcome, Username</string>
+    <string name="profile">Profile</string>
+    <string name="prompt_full_name">Input Full Name</string>
+    <string name="update">Update</string>
+    <string name="logout">Log Out</string>
+    <string name="prompt_address">Input Address</string>
+</resources>
